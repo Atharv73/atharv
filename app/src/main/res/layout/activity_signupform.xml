@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/blue_abstract_polygonal_background"
+    tools:context=".signupform">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+
+        android:layout_width="296dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="             Full Name"
+        android:inputType="textPersonName"
+        android:textColorHint="#FF5722"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="296dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="         Contact Number"
+
+        android:inputType="phone"
+        android:textColorHint="#FF5722"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="296dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textColorHint="#FF5722"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="162dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="16dp"
+        android:text="APPLY"
+        android:textSize="24sp"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="221dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HAVE ANY QUERY?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6"
+        app:layout_constraintVertical_bias="0.81" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="112dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="8dp"
+        android:text="Gender"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5"
+        app:layout_constraintVertical_bias="0.271" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup1"
+        android:layout_width="219dp"
+        android:layout_height="137dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5">
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="241dp"
+            android:layout_height="41dp"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="241dp"
+            android:layout_height="41dp"
+            android:text="Female"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="241dp"
+            android:layout_height="41dp"
+            android:text="Transgender" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="54dp"
+        android:layout_height="51dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName3"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName3"
+        app:srcCompat="@android:drawable/ic_menu_call" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="128dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="8dp"
+        android:text="Type Of Colitis"
+
+
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/radiogroup1"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName5"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
+        app:layout_constraintVertical_bias="0.551" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="112dp"
+        android:layout_height="61dp"
+        android:text="Date Of Birth"
+        android:textColor="#100101"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.684" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="DD/MM/YYYY"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/radiogroup1"
+        app:layout_constraintVertical_bias="0.358" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
