@@ -3,35 +3,41 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-
-
     android:layout_height="match_parent"
 
-    android:background="@drawable/blue_abstract_polygonal_background"
 
+    android:background="#008080"
+    android:textColor="@color/black"
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="238dp"
-        android:layout_height="127dp"
+        android:layout_width="247dp"
+        android:layout_height="150dp"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="361dp"
-        android:layout_height="110dp"
+        android:layout_width="373dp"
+        android:layout_height="102dp"
+
+
 
         android:fontFamily="@font/aclonica"
 
 
-        android:text="WELCOME TO THE COLITIS ASSOCIATION OF INDIA"
-        android:textColor="@android:color/holo_orange_light"
+        android:foregroundGravity="center"
+        android:text=" THE COLITIS ASSOCIATION
+                                OF INDIA"
+        android:textColor="@color/black"
+        android:textColorHighlight="@android:color/black"
+        android:textColorHint="#070707"
+        android:textColorLink="#050505"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,6 +49,7 @@
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="#000000"
         android:text="NEXT"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,12 +64,13 @@
         android:fontFamily="@font/aladin"
 
 
-        android:text="Colitis Association of India, is an organization, started by people related to the field of IBD.                                                                           It was formed on 7th March 2005.                                 What is the Mission?                                                    CAI is volunteer based organization.                                    Its aims are :-                             To educate the patients and the relatives about the IBD.               To provide a platform for patients and relatives to share their problems with each other.               "
-        android:textColor="@android:color/holo_orange_light"
+        android:text="@string/colitis_association_of_india_is_an_organization_started_by_people_related_to_the_field_of_ibd_it_was_formed_on_7th_march_2005_what_is_the_mission_cai_is_volunteer_based_organization_its_aims_are_to_educate_the_patients_and_the_relatives_about_the_ibd_to_provide_a_platform_for_patients_and_relatives_to_share_their_problems_with_each_other"
+        android:textColor="@color/black"
+        android:textColorHint="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -71,25 +79,26 @@
         android:layout_width="113dp"
         android:layout_height="23dp"
         android:text="....Read More"
-        android:textColor="@android:color/holo_orange_light"
+        android:textColor="@color/white"
+        android:textColorHighlight="@android:color/holo_blue_dark"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="@+id/textView6"
-        app:layout_constraintHorizontal_bias="0.759"
+        app:layout_constraintHorizontal_bias="0.871"
         app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.751" />
+        app:layout_constraintVertical_bias="0.617" />
 
     Button
-        android:id="@+id/button10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Read More"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" /><![CDATA[
+    android:id="@+id/button10"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Read More"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/button3"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView6" /><![CDATA[
 
     98dp"
         android:layout_height="65dp"

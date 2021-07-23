@@ -17,6 +17,7 @@ public class login2pg extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login2pg);
 
+
         button11 = findViewById(R.id.button11);
         button12 = findViewById(R.id.button12);
         button13 = findViewById(R.id.button13);

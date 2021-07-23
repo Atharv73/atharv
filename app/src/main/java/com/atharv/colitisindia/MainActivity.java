@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
         textView4 = findViewById(R.id.textView4);
         textView6 = findViewById(R.id.textView6);
         imageView3 = findViewById(R.id.imageView3);
@@ -40,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         bottomanimations = AnimationUtils.loadAnimation(this , R.anim.bottomanimations);
 
         imageView3.setAnimation(animations);
+
         textView6.setAnimation(bottomanimations);
         textView4.setAnimation(bottomanimations);
         textView8.setAnimation(bottomanimations);

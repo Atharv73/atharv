@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">colitisindia</string>
-
+    <string name="add_your_full_name">add your full name</string>
+    <string name="add_your_contact_number">add your contact number</string>
+    <string name="add_your_email_adress">add your email adress</string>
+    <string name="colitis_association_of_india_is_an_organization_started_by_people_related_to_the_field_of_ibd_it_was_formed_on_7th_march_2005_what_is_the_mission_cai_is_volunteer_based_organization_its_aims_are_to_educate_the_patients_and_the_relatives_about_the_ibd_to_provide_a_platform_for_patients_and_relatives_to_share_their_problems_with_each_other">Colitis Association Of India is an organization, started by people related to the field of IBD. It was formed on 7th March 2005. What is the Mission? CAI is volunteer based organization. Its aims are :- To educate the patients and the relatives about the IBD. To provide a platform for patients and relatives to share their problems with each other</string>
 
 
 </resources>

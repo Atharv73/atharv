@@ -29,6 +29,7 @@ public class loginform extends AppCompatActivity {
         button7 = findViewById(R.id.button7);
         firebaseAuth = FirebaseAuth.getInstance();
 
+
         button7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

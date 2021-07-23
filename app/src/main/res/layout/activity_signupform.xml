@@ -5,97 +5,74 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:background="@drawable/blue_abstract_polygonal_background"
+
+
+    android:background="#008080"
     tools:context=".signupform">
-
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
-
-        android:layout_width="296dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:hint="             Full Name"
-        android:inputType="textPersonName"
-        android:textColorHint="#FF5722"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.417"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.035" />
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
         android:layout_width="296dp"
         android:layout_height="51dp"
-        android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="         Contact Number"
 
+        android:hint="Enter your Contact Number"
         android:inputType="phone"
-        android:textColorHint="#FF5722"
+        android:textColor="@android:color/black"
+        android:textColorHint="#000000"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.417"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
-        app:layout_constraintVertical_bias="0.035" />
+        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
     <EditText
         android:id="@+id/editTextTextPersonName4"
         android:layout_width="296dp"
         android:layout_height="51dp"
-        android:layout_marginTop="8dp"
         android:ems="10"
-        android:hint="Email"
+        android:hint="Enter your Email Address"
         android:inputType="textPersonName"
-        android:textColorHint="#FF5722"
+        android:textColorHint="#0C0C0C"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.417"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
-        app:layout_constraintVertical_bias="0.045" />
+        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="162dp"
-        android:layout_height="51dp"
+        android:layout_width="248dp"
+        android:layout_height="61dp"
         android:layout_marginBottom="16dp"
+        android:background="#000000"
         android:text="APPLY"
         android:textSize="24sp"
+        app:backgroundTint="#000000"
         app:cornerRadius="100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintHorizontal_bias="0.57"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextPersonName5"
-        android:layout_width="221dp"
-        android:layout_height="68dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
+        android:layout_width="263dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="#0C0C0C"
+        android:textColorHint="#040303"
+        app:layout_constraintBottom_toTopOf="@+id/radiogroup1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="HAVE ANY QUERY?"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button5"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6"
-        app:layout_constraintVertical_bias="0.81" />
 
     <TextView
         android:id="@+id/textView5"
@@ -112,63 +89,76 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5"
         app:layout_constraintVertical_bias="0.271" />
 
+
     <RadioGroup
         android:id="@+id/radiogroup1"
-        android:layout_width="219dp"
-        android:layout_height="137dp"
+        android:layout_width="227dp"
+        android:layout_height="130dp"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.607"
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5">
 
         <RadioButton
             android:id="@+id/radioButton5"
-            android:layout_width="241dp"
-            android:layout_height="41dp"
-            android:text="Male" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00F4E23F"
+
+            android:text="Male"
+            android:textColor="#090909"
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/radioButton6"
+
             android:layout_width="241dp"
             android:layout_height="41dp"
+            android:background="#00F4E23F"
             android:text="Female"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/radioButton7"
             android:layout_width="241dp"
             android:layout_height="41dp"
-            android:text="Transgender" />
+            android:background="#00F4E23F"
+            android:text="Transgender"
+            android:textColor="#090909"
+            android:textSize="20sp" />
     </RadioGroup>
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="54dp"
-        android:layout_height="51dp"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+
+        android:background="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName3"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName3"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@android:drawable/ic_menu_call" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="128dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="87dp"
+        android:layout_height="60dp"
         android:text="Type Of Colitis"
 
 
-        android:textColor="@android:color/holo_green_light"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/radiogroup1"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName5"
-        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
-        app:layout_constraintVertical_bias="0.551" />
+        app:layout_constraintVertical_bias="0.549" />
 
     <TextView
         android:id="@+id/textView2"
@@ -191,12 +181,56 @@
         android:ems="10"
         android:hint="DD/MM/YYYY"
         android:inputType="date"
+        android:textColor="#090909"
+        android:textColorHint="#090808"
         app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.538"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/radiogroup1"
         app:layout_constraintVertical_bias="0.358" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName4"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/sym_action_email" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="296dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:hint="Enter your Name"
+        android:inputType="textPersonName"
+        android:textColorHint="#090808"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.747"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.454" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="56dp"
+        android:layout_height="49dp"
+        android:background="#00C6B4B4"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName2"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.472"
+        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,12 +17,19 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
 
 public class signupform extends AppCompatActivity {
     EditText editTextTextPersonName2;
     EditText editTextTextPersonName3;
     EditText editTextTextPersonName4;
     EditText editTextTextPersonName5;
+    EditText editTextTextPersonName6;
     TextView textView;
     TextView textView5;
     RadioButton radioButton5;
@@ -30,9 +37,11 @@ public class signupform extends AppCompatActivity {
     RadioButton radioButton7;
 
     Button button5;
-    Button button4;
+
     RadioGroup radioGroup1;
     private FirebaseAuth firebaseAuth;
+    FirebaseFirestore fstore;
+    String userid;
 
 
 
@@ -43,10 +52,12 @@ public class signupform extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signupform);
 
+
         editTextTextPersonName2 = findViewById(R.id.editTextTextPersonName2);
         editTextTextPersonName3 = findViewById(R.id.editTextTextPersonName3);
         editTextTextPersonName4 = findViewById(R.id.editTextTextPersonName4);
         editTextTextPersonName5 = findViewById(R.id.editTextTextPersonName5);
+        editTextTextPersonName6 = findViewById(R.id.editTextTextPersonName6);
         textView = findViewById(R.id.textView);
         textView = findViewById(R.id.textView);
         textView5 = findViewById(R.id.textView5);
@@ -55,10 +66,11 @@ public class signupform extends AppCompatActivity {
         radioButton7 = findViewById(R.id.radioButton7);
 
         button5 = findViewById(R.id.button5);
-        button4 = findViewById(R.id.button4);
+
         radioGroup1 = findViewById(R.id.radiogroup1);
 
        firebaseAuth = FirebaseAuth.getInstance();
+       fstore = FirebaseFirestore.getInstance();
 
 
 
@@ -69,6 +81,10 @@ public class signupform extends AppCompatActivity {
                 String contactnumber = editTextTextPersonName3.getText().toString();
                 String email = editTextTextPersonName4.getText().toString();
                 String type = editTextTextPersonName5.getText().toString();
+                String gender = radioButton5.getText().toString();
+                String gender1 = radioButton6.getText().toString();
+                String gender2 = radioButton7.getText().toString();
+                String Dob = editTextTextPersonName6.getText().toString();
 
 
 
@@ -97,9 +113,28 @@ public class signupform extends AppCompatActivity {
                 firebaseAuth.createUserWithEmailAndPassword(email, password)
                         .addOnCompleteListener(signupform.this , new OnCompleteListener<AuthResult>() {
                             @Override
+
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
                                     Toast.makeText(signupform.this, "Registration is Successful . Password reset link will be sent to your registered email address .   ", Toast.LENGTH_LONG).show();
+                                    userid  = Objects.requireNonNull(firebaseAuth.getCurrentUser()).getUid();
+                                    DocumentReference documentReference = fstore.collection("users").document(userid);
+                                    Map<String,Object> user = new HashMap<>();
+                                    user.put("Full Name" , fullname);
+                                    user.put("Email" , email);
+                                    user.put("Contact Number" , contactnumber);
+                                    user.put("Type of Colitis" , type);
+                                    user.put("Gender" , gender);
+                                    user.put("DOB" , Dob);
+
+
+
+
+
+
+
+
+
                                     startActivity(new Intent(signupform.this , login2pg.class));
 
 
